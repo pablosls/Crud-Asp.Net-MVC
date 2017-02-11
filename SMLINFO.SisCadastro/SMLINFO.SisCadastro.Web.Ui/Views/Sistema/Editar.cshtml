@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewBag.Title = "Consulta de Alunos e Manutenção";
+}
+
+@model SMLINFO.SisCadastro.Web.Ui.Models.AlunosMOD
+
+<br />
+
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h3 class="panel-title">Manutenção de Alunos</h3>
+    </div>
+    <div class="panel-body">
+
+        @Html.Partial("_PartialMensagens")
+        @using (Html.BeginForm("Editar", "Sistema", FormMethod.Post))
+        {
+
+            @Html.Partial("_PartialFormularioCadastro");
+            <div class="row">
+                <div class="col-md-3 form-group">
+                    <input class="btn btn-sm btn-primary btn-block" type="submit" name="btnEnviar" id="btnEnviar" value="Gravar" />
+                </div>
+                <div class="col-md-3 form-group">
+                    <a name="btnExcluir" id="btnExcluir" class="btn btn-sm btn-danger btn-block" codigo="@Model.Id" href="#">    Excluir    </a>   
+                 </div>
+            </div>
+        }
+    </div>
+</div>

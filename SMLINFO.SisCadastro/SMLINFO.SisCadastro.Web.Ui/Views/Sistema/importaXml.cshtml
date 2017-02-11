@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewBag.Title = "importaXml";
+}
+<br />
+
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h3 class="panel-title">Importar arquivo Xml</h3>
+    </div>
+    <div class="panel-body">
+
+        @using (Html.BeginForm("ImportXml", "Sistema", FormMethod.Post,
+                                                new { enctype = "multipart/form-data" }))
+        {
+            <label for="file">Selecione o arquivo Xml contendo os dados dos Alunos</label>
+            <input type="file" class="form-control" name="file" id="file" style="width: 100%;" />
+            <br />
+            <input type="submit" class="btn btn-primary form-control" value="Upload" />
+        }
+     </div>
+</div>
+
+  
+

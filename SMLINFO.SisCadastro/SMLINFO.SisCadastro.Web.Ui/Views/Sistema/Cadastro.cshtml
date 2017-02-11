@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewBag.Title = "Cadastro de Novo Aluno";
+}
+
+@model SMLINFO.SisCadastro.Web.Ui.Models.AlunosMOD
+
+<br />
+
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h3 class="panel-title">Cadastro de Novos Alunos</h3>
+    </div>
+    <div class="panel-body">
+
+        @Html.Partial("_PartialMensagens")
+        @using (Html.BeginForm("RecebeCadastro", "Sistema", FormMethod.Post))
+        {
+
+            @Html.Partial("_PartialFormularioCadastro");
+
+            <div class="row">
+                <div class="col-md-3 form-group">
+                    <input class="btn btn-sm btn-primary btn-block" type="submit" name="btnEnviar" id="btnEnviar" value="Cadastrar Aluno" />
+                </div>
+                <div class="col-md-3 form-group">
+                    <input class="btn btn-sm btn-primary btn-block" type="reset" name="btnEnviar" id="btnLimpar" value="Limpar" />
+                </div>
+            </div>
+
+        }
+    </div>
+</div>
+
+
+

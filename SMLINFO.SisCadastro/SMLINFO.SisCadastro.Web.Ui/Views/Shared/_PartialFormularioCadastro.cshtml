@@ -1,0 +1,59 @@
+﻿
+
+@model SMLINFO.SisCadastro.Web.Ui.Models.AlunosMOD
+<div class="row">
+    <div class="col-md-6">
+        <div class="row">
+            <div class="col-md-6 form-group">
+
+                @Html.LabelFor(x => x.CodMatricula)
+                @Html.TextBoxFor(x => x.CodMatricula, new { placeholder = "Insira o Código do Aluno", @class = "form-control" })
+                @Html.ValidationMessageFor(x => x.CodMatricula)
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 form-group">
+                @Html.LabelFor(x => x.Nome)
+                @Html.TextBoxFor(x => x.Nome, new { placeholder = "Insira o Nome do aluno", @class = "form-control" })
+                @Html.ValidationMessageFor(x => x.Nome)
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 form-group">
+                @Html.LabelFor(x => x.DataNascimento)
+                @Html.TextBoxFor(x => x.DataNascimento, "{0:yyyy-MM-dd}", new { placeholder = "Data de Vencimento", @class = "form-control", type = "date" })
+                @Html.ValidationMessageFor(x => x.DataNascimento)
+            </div>
+            <div class="col-md-6 form-group">
+                @Html.LabelFor(x => x.Idade)
+                @Html.TextBoxFor(x => x.Idade, new { placeholder = "Idade", @class = "form-control" })
+                @Html.ValidationMessageFor(x => x.Idade)
+            </div>
+        </div>
+
+
+    </div>
+    <div class="col-md-4">
+      
+
+        <br />
+        <div class="row">
+            <div class="col-md-12 form-group">
+                <input class="btn  btn-primary btn-block" type="button" name="btnConsultar" id="btnConsultar" value="Consultar" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 form-group">
+                <input class="btn  btn-primary btn-block" type="button" name="btnNovo" id="btnNovo" value="Novo" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 form-group">
+                <input class="btn  btn-primary btn-block" type="button" name="btnImportarXML" id="btnImportarXML" value="Importar XML" />
+            </div>
+        </div>
+    </div>
+</div>
+
+

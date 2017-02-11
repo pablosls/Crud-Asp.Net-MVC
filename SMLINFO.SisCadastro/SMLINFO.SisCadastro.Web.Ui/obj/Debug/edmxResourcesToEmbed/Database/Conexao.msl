@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="AVALIACAOModelStoreContainer" CdmEntityContainer="DB_AVALIACAOEntities">
+    <EntitySetMapping Name="CadAlunoPABLO">
+      <EntityTypeMapping TypeName="AVALIACAOModel.CadAlunoPABLO">
+        <MappingFragment StoreEntitySet="CadAlunoPABLO">
+          <ScalarProperty Name="ID_ALUNO" ColumnName="ID_ALUNO" />
+          <ScalarProperty Name="COD_MATRICULA" ColumnName="COD_MATRICULA" />
+          <ScalarProperty Name="NOME" ColumnName="NOME" />
+          <ScalarProperty Name="DATA_NASCIMENTO" ColumnName="DATA_NASCIMENTO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
